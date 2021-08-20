@@ -1,4 +1,4 @@
-  # STAR_Dataset Overview
+  # STAR Dataset Overview
 
   ### Question Type
   - Interaction Question
