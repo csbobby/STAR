@@ -1,9 +1,9 @@
-# STAR_Dataset
+  # STAR_Dataset Overview
 
   ### Question Type
-  - Action Question
-  - Spatial Temporal Relation Question
-  - Predictive Question
+  - Interaction Question
+  - Sequence Question
+  - Prediction Question
   - Feasibility Question
 
 
@@ -29,10 +29,10 @@
   * Video Features
     * [Visual Features from the Charades](https://prior.allenai.org/projects/charades)
     
-   ## STAR Codes and Scripts
-   The code of the STAR benchmark is available on GitHub. With this code you can:
-     - Visualize the STAR questions, options, situation graphs: [QA Visualization Script](https://github.com/csbobby/QAGeneration/tree/release/code/QA_show_script)
-     - Generate new STAR questions for situation video clips: [QA Generation Code](https://github.com/csbobby/QAGeneration/tree/release/code)
+  ## STAR Codes and Scripts  
+  The code of the STAR benchmark is available on GitHub. With this code you can:
+   * Visualize the STAR questions, options, situation graphs: [QA Visualization Script](https://github.com/csbobby/QAGeneration/tree/release/code/QA_show_script)
+   * Generate new STAR questions for situation video clips: [QA Generation Code](https://github.com/csbobby/QAGeneration/tree/release/code)
 
 
 
