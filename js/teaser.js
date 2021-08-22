@@ -2,7 +2,9 @@ var teaserdata,
     teaser_location = [[2, 3], [4, 1], [5, 4], [6, 2], [1, 0], [3, 5], [6, 6], [4, 0]],
     teaser_background = ["#F1B1A4", "#8073bf", "#ADDCF0", "#6B4057", "#FFC375", "#648045"],
     teaser_fill = ["#161616", "#FFFFFF", "#161616", "#FFFFFF", "#161616", "#FFFFFF"],
-    teaser_padding = 60;
+    teaser_padding = 60,
+    linkGen = d3.linkVertical(),
+    pairdata = [];
 
 var teaserObjects, teaserBackground, teaserFill;
 
@@ -44,16 +46,16 @@ function render_teaser(file) {
             });
 
         });
-        
+
         document.getElementById("preview_actions_description").innerHTML = "these frames have a total of " + Object.keys(teaserActions).length + " actions."
-            
+
         let action_increment = (document.getElementById("preview_actions").offsetWidth - 30) / Object.keys(teaserdata.situations).length;
-        
+
         document.getElementById("preview_actions").innerHTML = "";
-        
-        Object.keys(teaserActions).forEach(function(a){
+
+        Object.keys(teaserActions).forEach(function (a) {
             let action_div = document.createElement("div");
-            action_div.style.marginLeft = action_increment * teaserActions[a].start + "px"; 
+            action_div.style.marginLeft = action_increment * teaserActions[a].start + "px";
             action_div.style.width = action_increment * teaserActions[a].duration + "px";
             action_div.innerHTML = "<div class='actiontop'></div><div class='actionbottom'>|</div><div class='actionbottom'>" + a + "</div>";
             document.getElementById("preview_actions").append(action_div);
@@ -76,11 +78,11 @@ function render_teaser(file) {
             let teaser_screen = document.createElement("div");
             teaser_screen.className = "t_screen";
             teaser_screen.innerHTML = "<img id='preview" + d + "' src='data/" + teaserdata.video_id + "/" + d + ".png'>";
-            
+
             let teaser_networks = document.createElement("div");
             teaser_networks.className = "t_screen";
             teaser_networks.innerHTML = "<div id='previewnetwork" + d + "'></div>";
-            
+
 
             // append teaser screen and adjust height
             document.getElementById("preview_screens").appendChild(teaser_screen);
@@ -151,28 +153,38 @@ function render_teaser(file) {
                         }
                     })
                 }
+            });
+            
+            pairdata = [];
+            t_pair.forEach(function(pair){
+                pairdata.push({
+                    source: [teaserX(pair[0]), teaserY(pair[0])],
+                    target: [teaserX(pair[1]), teaserY(pair[1])],
+                    sourceName: pair[0],
+                    targetName: pair[1]
+                })
             })
 
             teaser_network
-                .selectAll(".teaser_edge")
-                .data(t_pair)
-                .enter()
-                .append("line")
+                .selectAll(".linkGen")
+                .data(pairdata)
+                .join("path")
+                .attr("d", linkGen)
                 .attr("class", function (a) {
-                    return "teaser_edge" + d + " t_edge" + d + a[0].replace(/[^\w\s]/gi, '') + " t_edge" + d + a[1].replace(/[^\w\s]/gi, '');
+                    return "linkGen teaser_edge" + d + " t_edge" + d + a.sourceName.replace(/[^\w\s]/gi, '') + " t_edge" + d + a.targetName.replace(/[^\w\s]/gi, '');
                 })
-                .attr("x1", function (a) {
-                    return teaserX(a[0]);
-                })
-                .attr("x2", function (a) {
-                    return teaserX(a[1]);
-                })
-                .attr("y1", function (a) {
-                    return teaserY(a[0]);
-                })
-                .attr("y2", function (a) {
-                    return teaserY(a[1]);
-                })
+//                .attr("x1", function (a) {
+//                    return teaserX(a[0]);
+//                })
+//                .attr("x2", function (a) {
+//                    return teaserX(a[1]);
+//                })
+//                .attr("y1", function (a) {
+//                    return teaserY(a[0]);
+//                })
+//                .attr("y2", function (a) {
+//                    return teaserY(a[1]);
+//                })
                 .style("fill", "none")
                 .style("stroke-width", 2)
                 .style("stroke", "var(--gray)");
