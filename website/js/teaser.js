@@ -68,6 +68,7 @@ function render_teaser(file) {
             .range(teaser_fill);
 
         document.getElementById("preview_screens").innerHTML = "";
+        document.getElementById("preview_network").innerHTML = "";
 
         Object.keys(teaserdata.situations).forEach(function (d) { // d = teaser screen ID
 

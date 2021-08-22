@@ -403,9 +403,11 @@ a.download:hover {
 #preview_actions > div {
     background: var(--secondary);
     color: var(--background);
-    padding: 9px 16px;
-    margin: 5px 0;
+    padding: 6px 9px;
+    margin: 2px 0;
     border-radius: 5px;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 #demo {

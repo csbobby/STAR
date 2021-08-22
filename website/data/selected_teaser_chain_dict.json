@@ -62,6 +62,7 @@
                     }
                 }
             },
+
             {
                 "choice_id": 2,
                 "choice": "Washed.",
@@ -125,34 +126,36 @@
                 "bbox_labels": [],
                 "rel_pairs": [["person", "cup/glass/bottle"], ["person", "cup/glass/bottle"], ["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["book", "table"], ["person", "book"]],
                 "rel_labels": ["in front of", "drinking from", "holding", "in front of", "in front of", "on", "in front of"],
-                "actions": ["Drinking from a cup/glass/bottle"]
+                "actions": ["Drinking from a cup/glass/bottle",
+                            "Holding a phone/camera"]
             },
             "000491": {
                 "bbox_labels": [],
                 "rel_pairs": [["person", "cup/glass/bottle"], ["person", "cup/glass/bottle"], ["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["book", "table"], ["person", "book"]],
                 "rel_labels": ["in front of", "holding", "holding", "in front of", "in front of", "on", "in front of"],
-                "actions": ["Putting a cup/glass/bottle somewhere"]
+                "actions": ["Putting a cup/glass/bottle somewhere", "Holding a phone/camera"]
             },
             "000495": {
                 "bbox_labels": [],
                 "rel_pairs": [["person", "cup/glass/bottle"], ["person", "cup/glass/bottle"], ["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["book", "table"], ["person", "book"], ["cup/glass/book", "table"]],
                 "rel_labels": ["in front of", "touching", "holding", "in front of", "in front of", "on", "in front of", "on"],
-                "actions": ["Putting a cup/glass/bottle somewhere"]
+                "actions": ["Putting a cup/glass/bottle somewhere", "Holding a phone/camera"]
             },
             "000523": {
                 "bbox_labels": [],
                 "rel_pairs": [["person", "cup/glass/bottle"], ["cup/glass/bottle", "table"], ["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["book", "table"], ["person", "book"], ["person", "book"]],
                 "rel_labels": ["in front of", "on", "holding", "in front of", "in front of", "on", "in front of", "touching"],
-                "actions": ["Taking a book somewhere"]
+                "actions": ["Taking a book somewhere", "Holding a phone/camera"]
             },
             "000542": {
                 "bbox_labels": [],
                 "rel_pairs": [["person", "cup/glass/bottle"], ["cup/glass/bottle", "table"], ["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["person", "book"], ["person", "book"]],
                 "rel_labels": ["in front of", "on", "holding", "in front of", "in front of", "in front of", "touching"],
-                "actions": ["Taking a book somewhere"]
+                "actions": ["Taking a book somewhere", "Holding a phone/camera"]
             }
         }
     },
+
     "Prediction_T7_2232": {
         "question": "Which object would the person take next after they put down the cup/glass/bottle.?",
         "question_id": "Prediction_T7_2232",
@@ -277,31 +280,31 @@
                 "bbox_labels": [],
                 "rel_pairs": [["person", "cup/glass/bottle"], ["person", "cup/glass/bottle"], ["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["book", "table"], ["person", "book"]],
                 "rel_labels": ["in front of", "drinking from", "holding", "in front of", "in front of", "on", "in front of"],
-                "actions": ["Drinking from a cup/glass/bottle"]
+                "actions": ["Drinking from a cup/glass/bottle", "Holding a phone/camera"]
             },
             "000207": {
                 "bbox_labels": [],
                 "rel_pairs": [["person", "cup/glass/bottle"], ["person", "cup/glass/bottle"], ["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["book", "table"], ["person", "book"]],
                 "rel_labels": ["in front of", "holding", "holding", "in front of", "in front of", "on", "in front of"],
-                "actions": ["Drinking from a cup/glass/bottle"]
+                "actions": ["Drinking from a cup/glass/bottle", "Holding a phone/camera"]
             },
             "000265": {
                 "bbox_labels": [],
                 "rel_pairs": [["person", "cup/glass/bottle"], ["person", "cup/glass/bottle"], ["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["book", "table"], ["person", "book"]],
                 "rel_labels": ["in front of", "holding", "holding", "in front of", "in front of", "on", "in front of"],
-                "actions": ["Drinking from a cup/glass/bottle"]
+                "actions": ["Drinking from a cup/glass/bottle", "Holding a phone/camera"]
             },
             "000306": {
                 "bbox_labels": [],
                 "rel_pairs": [["person", "cup/glass/bottle"], ["person", "cup/glass/bottle"], ["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["book", "table"], ["person", "book"]],
                 "rel_labels": ["in front of", "holding", "holding", "in front of", "in front of", "on", "in front of"],
-                "actions": ["Drinking from a cup/glass/bottle"]
+                "actions": ["Drinking from a cup/glass/bottle", "Holding a phone/camera"]
             },
             "000384": {
                 "bbox_labels": [],
                 "rel_pairs": [["person", "cup/glass/bottle"], ["person", "cup/glass/bottle"], ["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["book", "table"], ["person", "book"]],
                 "rel_labels": ["in front of", "drinking from", "holding", "in front of", "in front of", "on", "in front of"],
-                "actions": ["Drinking from a cup/glass/bottle"]
+                "actions": ["Drinking from a cup/glass/bottle", "Holding a phone/camera"]
             }
         }
     },
@@ -429,25 +432,25 @@
                 "bbox_labels": [],
                 "rel_pairs": [["person", "cup/glass/bottle"], ["person", "cup/glass/bottle"], ["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["book", "table"], ["person", "book"]],
                 "rel_labels": ["in front of", "drinking from", "holding", "in front of", "in front of", "on", "in front of"],
-                "actions": ["Drinking from a cup/glass/bottle"]
+                "actions": ["Drinking from a cup/glass/bottle", "Holding a phone/camera"]
             },
             "000491": {
                 "bbox_labels": [],
                 "rel_pairs": [["person", "cup/glass/bottle"], ["person", "cup/glass/bottle"], ["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["book", "table"], ["person", "book"]],
                 "rel_labels": ["in front of", "touching", "holding", "in front of", "in front of", "on", "in front of"],
-                "actions": ["Putting a cup/glass/bottle somewhere"]
+                "actions": ["Putting a cup/glass/bottle somewhere", "Holding a phone/camera"]
             },
             "000542": {
                 "bbox_labels": [],
                 "rel_pairs": [["person", "cup/glass/bottle"], ["cup/glass/bottle", "table"], ["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["person", "book"], ["person", "book"]],
                 "rel_labels": ["in front of", "on", "holding", "in front of", "in front of", "in front of", "holding"],
-                "actions": ["Taking a book somewhere"]
+                "actions": ["Taking a book somewhere", "Holding a phone/camera"]
             },
             "000593": {
                 "bbox_labels": [],
                 "rel_pairs": [["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["person", "book"], ["person", "book"]],
                 "rel_labels": ["holding", "in front of", "in front of", "in front of", "holding"],
-                "actions": ["Taking a book somewhere"]
+                "actions": ["Taking a book somewhere", "Holding a phone/camera"]
             },
             "000732": {
                 "bbox_labels": [],
@@ -457,6 +460,7 @@
             }
         }
     },
+
     "Feasibility_T4_110": {
         "question": "Which object is possible to be put down when the person is in front of the table?",
         "question_id": "Feasibility_T4_-1",
@@ -581,31 +585,31 @@
                 "bbox_labels": [],
                 "rel_pairs": [["person", "cup/glass/bottle"], ["person", "cup/glass/bottle"], ["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["book", "table"], ["person", "book"]],
                 "rel_labels": ["in front of", "drinking from", "holding", "in front of", "in front of", "on", "in front of"],
-                "actions": ["Drinking from a cup/glass/bottle"]
+                "actions": ["Drinking from a cup/glass/bottle", "Holding a phone/camera"]
             },
             "000207": {
                 "bbox_labels": [],
                 "rel_pairs": [["person", "cup/glass/bottle"], ["person", "cup/glass/bottle"], ["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["book", "table"], ["person", "book"]],
                 "rel_labels": ["in front of", "holding", "holding", "in front of", "in front of", "on", "in front of"],
-                "actions": ["Drinking from a cup/glass/bottle"]
+                "actions": ["Drinking from a cup/glass/bottle", "Holding a phone/camera"]
             },
             "000265": {
                 "bbox_labels": [],
                 "rel_pairs": [["person", "cup/glass/bottle"], ["person", "cup/glass/bottle"], ["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["book", "table"], ["person", "book"]],
                 "rel_labels": ["in front of", "holding", "holding", "in front of", "in front of", "on", "in front of"],
-                "actions": ["Drinking from a cup/glass/bottle"]
+                "actions": ["Drinking from a cup/glass/bottle", "Holding a phone/camera"]
             },
             "000306": {
                 "bbox_labels": [],
                 "rel_pairs": [["person", "cup/glass/bottle"], ["person", "cup/glass/bottle"], ["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["book", "table"], ["person", "book"]],
                 "rel_labels": ["in front of", "holding", "holding", "in front of", "in front of", "on", "in front of"],
-                "actions": ["Drinking from a cup/glass/bottle"]
+                "actions": ["Drinking from a cup/glass/bottle", "Holding a phone/camera"]
             },
             "000384": {
                 "bbox_labels": [],
                 "rel_pairs": [["person", "cup/glass/bottle"], ["person", "cup/glass/bottle"], ["person", "phone/camera"], ["person", "phone/camera"], ["person", "table"], ["book", "table"], ["person", "book"]],
                 "rel_labels": ["in front of", "drinking from", "holding", "in front of", "in front of", "on", "in front of"],
-                "actions": ["Drinking from a cup/glass/bottle"]
+                "actions": ["Drinking from a cup/glass/bottle", "Holding a phone/camera"]
             }
         }
     }
