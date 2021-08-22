@@ -74,10 +74,16 @@ function render_teaser(file) {
             // create teaser screen div
             let teaser_screen = document.createElement("div");
             teaser_screen.className = "t_screen";
-            teaser_screen.innerHTML = "<img id='preview" + d + "' src='data/" + teaserdata.video_id + "/" + d + ".png'><div id='previewnetwork" + d + "'></div>";
+            teaser_screen.innerHTML = "<img id='preview" + d + "' src='data/" + teaserdata.video_id + "/" + d + ".png'>";
+            
+            let teaser_networks = document.createElement("div");
+            teaser_networks.className = "t_screen";
+            teaser_networks.innerHTML = "<div id='previewnetwork" + d + "'></div>";
+            
 
             // append teaser screen and adjust height
             document.getElementById("preview_screens").appendChild(teaser_screen);
+            document.getElementById("preview_network").appendChild(teaser_networks);
             document.getElementById("preview" + d).style.width = "calc(100% - 5px)";
 
             let teaser_objects = [],
@@ -182,7 +188,7 @@ function render_teaser(file) {
                     return (teaserX(a[0]) + teaserX(a[1])) / 2;
                 })
                 .attr("y", function (a) {
-                    return (teaserY(a[0]) + teaserY(a[1])) / 2 - 5;
+                    return (teaserY(a[0]) + teaserY(a[1])) / 2;
                 })
                 .text(function (a, i) {
                     return t_label[i];
@@ -190,23 +196,6 @@ function render_teaser(file) {
                 .style("fill", "var(--main)")
                 .style("text-anchor", "middle")
                 .style("font-size", 10)
-
-            teaser_network
-                .selectAll(".teaser_edge_circle")
-                .data(t_pair)
-                .enter()
-                .append("circle")
-                .attr("class", function (a) {
-                    return "teaser_edge_circle" + d + " t_edge_circle" + d + a[0].replace(/[^\w\s]/gi, '') + " t_edge_circle" + d + a[1].replace(/[^\w\s]/gi, '');
-                })
-                .attr("cx", function (a) {
-                    return (teaserX(a[0]) + teaserX(a[1])) / 2;
-                })
-                .attr("cy", function (a) {
-                    return (teaserY(a[0]) + teaserY(a[1])) / 2;
-                })
-                .attr("r", 2)
-                .style("fill", "var(--main)");
 
             teaser_network
                 .selectAll(".teaser_rect")

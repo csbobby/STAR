@@ -384,7 +384,8 @@ a.download:hover {
     filter: none !important;
 }
 
-#preview_screens {
+#preview_screens,
+#preview_network{
     display: flex;
     padding-left: 30px;
     width: calc(100% - 10px);
