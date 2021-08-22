@@ -1,5 +1,8 @@
-  # STAR Dataset Overview
-A novel video question-answering benchmark for situated reasoning. 
+  # STAR Benchmark
+  
+  ### Overview
+  A novel video question-answering benchmark for situated reasoning. 
+  
   ### Question Type
   - Interaction Question
   - Sequence Question
