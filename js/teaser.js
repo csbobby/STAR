@@ -53,9 +53,9 @@ function render_teaser(file) {
         
         Object.keys(teaserActions).forEach(function(a){
             let action_div = document.createElement("div");
-            action_div.innerHTML = a;
             action_div.style.marginLeft = action_increment * teaserActions[a].start + "px"; 
             action_div.style.width = action_increment * teaserActions[a].duration + "px";
+            action_div.innerHTML = "<div class='actiontop'></div><div class='actionbottom'>|</div><div class='actionbottom'>" + a + "</div>";
             document.getElementById("preview_actions").append(action_div);
         })
 
@@ -263,11 +263,9 @@ function render_teaser(file) {
         // append questions
         document.getElementById("preview_choice").innerHTML =
             "<h4 id='preview_question'>" + teaserdata.question + "</h4>" +
-            "<div class='rows'>" +
             "<div id='preview_answers'>" +
             teaser_choices +
-            "</div><div class='t_response'>" +
-            "<em id='teaser_response'></em></div></div>";
+            "<div class='t_response'></div></div>";
 
         document.getElementById("preview_description").innerHTML = "This is example <b>" + teaserdata.question_id + "</b>, consisting of " + Object.keys(teaserdata.situations).length + " frames of video action.";
 

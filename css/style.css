@@ -292,21 +292,20 @@ a.download:hover {
 
 #preview_answers {
     display: flex;
+    margin-right: -40px;
 }
 
 #preview_answers > button {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: calc(100% - 10px);
     margin-top: 5px;
-/*    margin-right: 5px;*/
     background: var(--background_gray);
     border: none;
     padding: 9px 13px;
     text-align: left;
     white-space: nowrap;
-    width: 280px;
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 #preview_answers > button:hover {
@@ -388,7 +387,7 @@ a.download:hover {
 #preview_network{
     display: flex;
     padding-left: 30px;
-    width: calc(100% - 10px);
+    width: calc(100% + 5px);
     border-left: solid 10px var(--background_gray);
     margin: 20px 0 20px 0;
 }
@@ -400,12 +399,17 @@ a.download:hover {
     margin: 20px 0 20px 0;
 }
 
-#preview_actions > div {
-    background: var(--secondary);
-    color: var(--background);
-    padding: 6px 9px;
-    margin: 2px 0;
-    border-radius: 5px;
+#preview_actions > div > .actiontop {
+    border: solid 1px var(--secondary);
+    border-top: none;
+    height: 5px;
+}
+
+#preview_actions > div > .actionbottom {
+    color: var(--secondary);
+    text-align: center;
+    margin-top: -3px;
+    margin-bottom: 5px;
     font-size: 12px;
     line-height: 16px;
 }
