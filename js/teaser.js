@@ -47,7 +47,7 @@ function render_teaser(file) {
 
         });
 
-        document.getElementById("preview_actions_description").innerHTML = "Situation Hypergraph";
+        document.getElementById("preview_actions_description").innerHTML = "<br>Situation Hypergraph";
 
         let action_increment = (document.getElementById("preview_actions").offsetWidth - 30) / Object.keys(teaserdata.situations).length;
 
@@ -57,7 +57,7 @@ function render_teaser(file) {
             let action_div = document.createElement("div");
             action_div.style.marginLeft = action_increment * teaserActions[a].start + "px";
             action_div.style.width = action_increment * teaserActions[a].duration + "px";
-            action_div.innerHTML = "<div class='actionbottom'>" + a + "</div><div class='actionbottom'>|</div><div class='actiontop'></div>";
+            action_div.innerHTML = "<div class='actionbottom'>" + a + "</div><div class='actiontop'></div>";
             document.getElementById("preview_actions").append(action_div);
         })
 
@@ -117,7 +117,7 @@ function render_teaser(file) {
 
             let tXScale = d3.scaleLinear()
                 .domain(d3.extent(tX))
-                .range([teaser_padding, teaser_width - teaser_padding]);
+                .range([teaser_padding/1.5, teaser_width - teaser_padding]);
 
             let tYScale = d3.scaleLinear()
                 .domain(d3.extent(tY))
@@ -171,20 +171,8 @@ function render_teaser(file) {
                 .join("path")
                 .attr("d", linkGen)
                 .attr("class", function (a) {
-                    return "tsr linkGen teaser_edge" + d + " t_edge" + d + a.sourceName.replace(/[^\w\s]/gi, '') + " t_edge" + d + a.targetName.replace(/[^\w\s]/gi, '');
+                    return "tsr linkGen teaser_edge" + d + " t_edge" + d + a.sourceName.replace(/[^\w\s]/gi, '') + " t_edge" + d + a.targetName.replace(/[^\w\s]/gi, '')
                 })
-                //                .attr("x1", function (a) {
-                //                    return teaserX(a[0]);
-                //                })
-                //                .attr("x2", function (a) {
-                //                    return teaserX(a[1]);
-                //                })
-                //                .attr("y1", function (a) {
-                //                    return teaserY(a[0]);
-                //                })
-                //                .attr("y2", function (a) {
-                //                    return teaserY(a[1]);
-                //                })
                 .style("fill", "none")
                 .style("stroke-width", 2)
                 .style("stroke", "var(--gray)");
@@ -343,15 +331,13 @@ function teaser_choice(a) {
 
         };
     });
-    
+
     if (teaserdata.choices[a].answer == "Wrong") {
         document.getElementById("preview_answers").childNodes[a].className = "preview_incorrect";
         document.getElementById("preview_answers").childNodes[a].innerHTML += "<i class='fa fa-times-circle'></i>";
-        document.getElementById("preview_answers").childNodes[a].setAttribute("onclick", "");
     } else {
         document.getElementById("preview_answers").childNodes[a].className = "preview_correct";
         document.getElementById("preview_answers").childNodes[a].innerHTML += "<i class='fa fa-check-circle'></i>";
-        document.getElementById("preview_answers").childNodes[a].setAttribute("onclick", "");
     };
 };
 

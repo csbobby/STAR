@@ -42,17 +42,17 @@ d3.json("data/sel_v2.json").then(function (raw_d) {
 
             e.data.choices.forEach(function (d) {
                 if (d.answer == "Correct") {
-                    answers += "<i class='fa fa-check-circle'></i> " + d.choice + "<br>";
+                    answers += "<span><i class='fa fa-check-circle'></i> " + d.choice + "</span><br>";
                 } else {
-                    answers += "<i class='fa fa-times-circle'></i> " + d.choice + "<br>";
+                    answers += "<span style='opacity: 0.5'><i class='fa fa-times-circle'></i> " + d.choice + "</span><br>";
                 }
             })
 
-            document.getElementById("demo" + vid).innerHTML += "<div>" +
-                "<p class='e_a'>" + e.data.question_id + "</p>" +
+            document.getElementById("demo" + vid).innerHTML += "<div class='demo_questions'>" +
+                "<div><p class='e_a'>" + e.data.question_id + "</p>" +
                 "<p class='e_q'>" + e.data.question + "</p>" +
-                "<p class='e_a'>Keyword(s): " + e.data.question_keyword.join(" | ") + "</p>" +
-                "<p class='e_c'><br>" + answers + "</p></div>";
+                "<p class='e_a'>Keyword(s): " + e.data.question_keyword.join(" | ") + "</p></div>" +
+                "<div><p class='e_c'><br>" + answers + "</p></div></div>";
 
         });
     })

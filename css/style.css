@@ -27,6 +27,9 @@ p {
 p.boxed {
     padding: 15px 25px 20px 25px;
     margin-top: 15px;
+    margin-bottom: -30px;
+    font-size: 16px;
+    line-height: 20px;
     background: var(--background_gray);
 }
 
@@ -77,6 +80,7 @@ b {
     text-decoration: none;
     font-size: 16px;
     line-height: 28px;
+    white-space: nowrap;
 }
 
 .nav > a:hover {
@@ -283,12 +287,12 @@ a.download:hover {
 
 #preview_choice {
     padding: 0 30px;
-    margin: 50px 0;
+    margin: 16px 0;
     border-left: solid 10px var(--background_gray);
 }
 
 #preview_question {
-    font-weight: 600;
+    font-weight: 400;
 }
 
 #preview_answers {
@@ -307,6 +311,7 @@ a.download:hover {
     text-align: left;
     white-space: nowrap;
     margin-right: 10px;
+    font-size: 18px;
 }
 
 #preview_answers > button:hover {
@@ -390,14 +395,14 @@ a.download:hover {
     padding-left: 30px;
     width: calc(100% + 5px);
     border-left: solid 10px var(--background_gray);
-    margin: 20px 0 20px 0;
+/*    margin: 20px 0 20px 0;*/
 }
 
 #preview_actions {
     width: calc(100% - 10px);
     padding-left: 30px;
     border-left: solid 10px var(--background_gray);
-    margin: 20px 0 20px 0;
+/*    margin: 20px 0 20px 0;*/
 }
 
 #preview_actions > div > .actiontop {
@@ -409,9 +414,9 @@ a.download:hover {
 #preview_actions > div > .actionbottom {
     color: var(--secondary);
     text-align: center;
-    margin-bottom: -3px;
     margin-top: 5px;
     font-size: 12px;
+    margin-bottom: 0px;
     line-height: 16px;
 }
 
@@ -452,9 +457,9 @@ a.download:hover {
 }
 
 .e_c {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 5px;
-    line-height: 14px;
+    line-height: 18px;
 }
 
 .e_a {
@@ -465,10 +470,10 @@ a.download:hover {
 }
 
 .e_q {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 20px;
     margin: 5px 0;
-    font-weight: 800;
-    line-height: 24px;
+    font-weight: 400;
     color: var(--main);
 }
 
@@ -507,8 +512,22 @@ a.download:hover {
     border-radius: 10px;
 }
 
+/*
 #video_details > div > div {
     display: inline-block;
-    width: 45%;
-    margin: 2.5%;
+    width: 50%;
+    margin: 1%;
+}
+*/
+
+.demo_info{
+    position: relative;
+}
+
+.demo_questions {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
 }
