@@ -154,9 +154,9 @@ function render_teaser(file) {
                     })
                 }
             });
-            
+
             pairdata = [];
-            t_pair.forEach(function(pair){
+            t_pair.forEach(function (pair) {
                 pairdata.push({
                     source: [teaserX(pair[0]), teaserY(pair[0])],
                     target: [teaserX(pair[1]), teaserY(pair[1])],
@@ -171,20 +171,20 @@ function render_teaser(file) {
                 .join("path")
                 .attr("d", linkGen)
                 .attr("class", function (a) {
-                    return "linkGen teaser_edge" + d + " t_edge" + d + a.sourceName.replace(/[^\w\s]/gi, '') + " t_edge" + d + a.targetName.replace(/[^\w\s]/gi, '');
+                    return "tsr linkGen teaser_edge" + d + " t_edge" + d + a.sourceName.replace(/[^\w\s]/gi, '') + " t_edge" + d + a.targetName.replace(/[^\w\s]/gi, '');
                 })
-//                .attr("x1", function (a) {
-//                    return teaserX(a[0]);
-//                })
-//                .attr("x2", function (a) {
-//                    return teaserX(a[1]);
-//                })
-//                .attr("y1", function (a) {
-//                    return teaserY(a[0]);
-//                })
-//                .attr("y2", function (a) {
-//                    return teaserY(a[1]);
-//                })
+                //                .attr("x1", function (a) {
+                //                    return teaserX(a[0]);
+                //                })
+                //                .attr("x2", function (a) {
+                //                    return teaserX(a[1]);
+                //                })
+                //                .attr("y1", function (a) {
+                //                    return teaserY(a[0]);
+                //                })
+                //                .attr("y2", function (a) {
+                //                    return teaserY(a[1]);
+                //                })
                 .style("fill", "none")
                 .style("stroke-width", 2)
                 .style("stroke", "var(--gray)");
@@ -195,7 +195,7 @@ function render_teaser(file) {
                 .enter()
                 .append("text")
                 .attr("class", function (a) {
-                    return "teaser_edge_text" + d + " t_edge_text" + d + a[0].replace(/[^\w\s]/gi, '') + " t_edge_text" + d + a[1].replace(/[^\w\s]/gi, '');
+                    return "tsr teaser_edge_text" + d + " t_edge_text" + d + a[0].replace(/[^\w\s]/gi, '') + " t_edge_text" + d + a[1].replace(/[^\w\s]/gi, '');
                 })
                 .attr("x", function (a) {
                     return (teaserX(a[0]) + teaserX(a[1])) / 2;
@@ -216,7 +216,7 @@ function render_teaser(file) {
                 .enter()
                 .append("rect")
                 .attr("class", function (a) {
-                    return "teaser_rect" + d + " t_rect" + d + a.replace(/[^\w\s]/gi, '');
+                    return "tsr teaser_rect" + d + " t_rect" + d + a.replace(/[^\w\s]/gi, '');
                 })
                 .attr("rx", 10)
                 .attr("ry", 10)
@@ -230,7 +230,7 @@ function render_teaser(file) {
                 .enter()
                 .append("text")
                 .attr("class", function (a) {
-                    return "teaser_text" + d + " t_text" + d + a.replace(/[^\w\s]/gi, '');
+                    return "tsr teaser_text" + d + " t_text" + d + a.replace(/[^\w\s]/gi, '');
                 })
                 .text(function (a) {
                     return a;
@@ -284,87 +284,75 @@ function render_teaser(file) {
     })
 };
 
-function teaser_choice(n) {
+function teaser_choice(a) {
 
-    teaserdata.choices.forEach(function (d, i) {
-        document.getElementById("preview_answers").childNodes[i].setAttribute("onclick", "");
+    d3.selectAll(".tsr").style("opacity", 1);
 
-        if (d.answer == "Correct") {
-            Object.keys(d.chain).forEach(function (n) {
+    Object.keys(teaserdata.choices[a].chain).forEach(function (n) {
 
-                if (d.chain[n].rel_labels[0] == undefined) {
+        if (teaserdata.choices[a].chain[n].rel_labels[0] == undefined) {
 
-                    document.getElementById("preview" + n).style.opacity = 0.3;
+            document.getElementById("preview" + n).style.opacity = 0.3;
 
-                    d3.selectAll(".teaser_rect" + n)
-                        .style("fill", "var(--secondary)")
-                        .style("opacity", 0.2);
-                    d3.selectAll(".teaser_edge_text" + n)
-                        .style("fill", "var(--secondary)")
-                        .style("opacity", 0.2);
-                    d3.selectAll(".teaser_edge_circle" + n)
-                        .style("fill", "var(--secondary)")
-                        .style("opacity", 0.2);
-                    d3.selectAll(".teaser_edge" + n)
-                        .style("stroke", "var(--secondary)")
-                        .style("opacity", 0);
-                    d3.selectAll(".teaser_text" + n)
-                        .style("fill", "var(--background)")
-                        .style("opacity", 0.8);
+            d3.selectAll(".teaser_rect" + n)
+                .style("opacity", 0.1);
+            d3.selectAll(".teaser_edge_text" + n)
+                .style("opacity", 0.1);
+            d3.selectAll(".teaser_edge_circle" + n)
+                .style("opacity", 0.1);
+            d3.selectAll(".teaser_edge" + n)
+                .style("opacity", 0.1);
+            d3.selectAll(".teaser_text" + n)
+                .style("opacity", 0.1);
 
-                } else {
+        } else {
 
-                    let t_pairs = [];
+            document.getElementById("preview" + n).style.opacity = 1;
+            let tsrobj = teaserObjects;
 
-                    d.chain[n].rel_pairs.forEach(function (r) {
-                        if (teaserObjects.includes(r[0])) {
-                            teaserObjects = teaserObjects.filter(function (t) {
-                                return t !== r[0];
-                            })
-                        }
-                        if (teaserObjects.includes(r[1])) {
-                            teaserObjects = teaserObjects.filter(function (t) {
-                                return t !== r[1];
-                            })
-                        }
+            let t_pairs = [];
+
+            teaserdata.choices[a].chain[n].rel_pairs.forEach(function (r) {
+                if (tsrobj.includes(r[0])) {
+                    tsrobj = tsrobj.filter(function (t) {
+                        return t !== r[0];
                     })
-
-                    teaserObjects.forEach(function (obj) {
-
-                        d3.selectAll(".t_rect" + n + obj.replace(/[^\w\s]/gi, ''))
-                            .style("fill", "var(--secondary)")
-                            .style("opacity", 0.2);
-                        d3.selectAll(".t_edge_text" + n + obj.replace(/[^\w\s]/gi, ''))
-                            .style("fill", "var(--secondary)")
-                            .style("opacity", 0.2);
-                        d3.selectAll(".t_edge_circle" + n + obj.replace(/[^\w\s]/gi, ''))
-                            .style("fill", "var(--secondary)")
-                            .style("opacity", 0.2);
-                        d3.selectAll(".t_edge" + n + obj.replace(/[^\w\s]/gi, ''))
-                            .style("stroke", "var(--secondary)")
-                            .style("opacity", 0);
-                        d3.selectAll(".t_text" + n + obj.replace(/[^\w\s]/gi, ''))
-                            .style("fill", "var(--background)")
-                            .style("opacity", 0.8);
-
+                }
+                if (tsrobj.includes(r[1])) {
+                    tsrobj = tsrobj.filter(function (t) {
+                        return t !== r[1];
                     })
-
                 }
             })
-        }
 
-    })
+            tsrobj.forEach(function (obj) {
 
-    if (teaserdata.choices[n].answer == "Wrong") {
-        document.getElementById("preview_answers").childNodes[n].className = "preview_incorrect";
-        document.getElementById("preview_answers").childNodes[n].innerHTML += "<i class='fa fa-times-circle'></i>";
+                d3.selectAll(".t_rect" + n + obj.replace(/[^\w\s]/gi, ''))
+                    .style("opacity", 0.1);
+                d3.selectAll(".t_edge_text" + n + obj.replace(/[^\w\s]/gi, ''))
+                    .style("opacity", 0.1);
+                d3.selectAll(".t_edge_circle" + n + obj.replace(/[^\w\s]/gi, ''))
+                    .style("opacity", 0.1);
+                d3.selectAll(".t_edge" + n + obj.replace(/[^\w\s]/gi, ''))
+                    .style("opacity", 0.1);
+                d3.selectAll(".t_text" + n + obj.replace(/[^\w\s]/gi, ''))
+                    .style("opacity", 0.1);
+
+            });
+
+
+        };
+    });
+    
+    if (teaserdata.choices[a].answer == "Wrong") {
+        document.getElementById("preview_answers").childNodes[a].className = "preview_incorrect";
+        document.getElementById("preview_answers").childNodes[a].innerHTML += "<i class='fa fa-times-circle'></i>";
+        document.getElementById("preview_answers").childNodes[a].setAttribute("onclick", "");
+    } else {
+        document.getElementById("preview_answers").childNodes[a].className = "preview_correct";
+        document.getElementById("preview_answers").childNodes[a].innerHTML += "<i class='fa fa-check-circle'></i>";
+        document.getElementById("preview_answers").childNodes[a].setAttribute("onclick", "");
     };
-
-    document.getElementById("teaser_correct").className = "preview_correct";
-    document.getElementById("teaser_correct").innerHTML += "<i class='fa fa-check-circle'></i>";
-
-
-
-}
+};
 
 render_teaser("Sequence_T2_4161");
