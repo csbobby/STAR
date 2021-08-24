@@ -54,17 +54,17 @@
             <p>Reasoning in the real-world is not divorced from situations.<br>
                 -- a key challenge is to capture the knowledge from surrounding situations dynamically and reason accordingly. </p>
             <p class="boxed">
-                We introduce a challenging video question answering benchmark to measure machine intelligence on situated reasoning, called <b>Situated Reasoning in Real-World Videos (STAR)</b>. This benchmark is built upon real-world videos with human actions that are naturally dynamic and compositional. We hope it will provide an enabling resource for situated reasoning from real-world videos. </p>
+                Star is a novel benchmark for situated reasoning, which provides challenging question-answering tasks, symbolic situation descriptions and logic-grounded diagnosis via real world video situations. </p>
         </div>
 
         <div id="preview" class="section">
             <h4>Preview</h4>
-            <p>In this dataset, situations are decomposed by bottom-up hyper-graphs with atomic elements (e. g., actions, objects, and relationships). Let's look at one of the examples below...</p>
+            <p>In this dataset, situations are decomposed by bottom-up hyper-graphs with atomic elements (e. g., actions, objects, and relationships). Questions are procedurally generated using functional programs based on the situation hyper-graphs - the question types include <b>Interaction</b>, <b>Sequence</b>, <b>Prediction</b> and <b>Feasibility</b>. Let's look one example of each below:</p>
             <div class="preview_example">
-                <button id="p_selFeasibility_T4_110" onclick="render_teaser('Feasibility_T4_110')">Ex.1: Feasibility</button>
-                <button id="p_selInteraction_T2_5181" onclick="render_teaser('Interaction_T2_5181')">Ex.2: Interaction</button>
-                <button id="p_selPrediction_T7_2232" onclick="render_teaser('Prediction_T7_2232')">Ex.3: Prediction</button>
-                <button id="p_selSequence_T2_4161" onclick="render_teaser('Sequence_T2_4161')">Ex.4: Sequence</button>
+                <button id="p_selInteraction_T2_5181" onmouseover="render_teaser('Interaction_T2_5181')">Interaction</button>
+                <button id="p_selSequence_T2_4161" onmouseover="render_teaser('Sequence_T2_4161')">Sequence</button>
+                <button id="p_selPrediction_T7_2232" onmouseover="render_teaser('Prediction_T7_2232')">Prediction</button>
+                <button id="p_selFeasibility_T4_110" onmouseover="render_teaser('Feasibility_T4_110')">Feasibility</button>
             </div>
             <hr>
             <p id="preview_description"></p>
@@ -73,9 +73,8 @@
             <div id="preview_actions"></div>
             <div id="preview_network"></div>
             <hr>
-            <p>Questions are procedurally generated using functional programs based on the situation hyper-graphs. The dataset includes four types of questions, including interaction, sequence, prediction, and feasibility.</p>
+            <p></p>
             <div id="preview_choice"></div>
-            <div><em id='teaser_response'></em></div>
         </div>
 
         <div id="demo" class="section">
@@ -93,43 +92,52 @@
             <h4>Repository & Download</h4>
             <hr>
             <div class="rows">
-                <div>
-                    <p><b>Question Type Statistics</b></p>
+                <div style="border-right: solid 1px var(--gray);">
+                    <p style="font-size: 24px; line-height: 28px;"><b>STAR Overview</b></p>
+                    <p><b>Question Types:</b></p>
                     <ul>
-                        <li>Action Question</li>
-                        <li>Spatial Temporal Relation Question</li>
+                        <li>Interaction Question</li>
+                        <li>Sequence Question</li>
                         <li>Predictive Question</li>
                         <li>Feasibility Question</li>
                     </ul>
-                </div>
-                <div>
-                    <p><b>Vocabulary Statistics</b></p>
+                    <p><b>34.9K Situation Video Clips</b></p>
+                    <p><b>80.3K Situated Questions</b></p>
+                    <p><b>209K Situation Hypergraphs</b></p>
+                    <p><b>Annotation Statistics</b></p>
                     <ul>
-                        <li>Here are some</li>
-                        <li>Bullet points</li>
+                        <li>111 action classes</li>
+                        <li>29 entity classes</li>
+                        <li>25 relationship classes</li>
                     </ul>
 
                 </div>
-            </div>
-
-            <div class="rows">
-                <div>
-                    <p><b>Question and Multiple Choice Answers</b></p>
-                    <a href="https://github.com/csbobby/QAGeneration/blob/master/label_tool/qa.json" class="download">Questions and Answers <span>json</span></a><br>
-                    <a href="" class="download">Train/Val/Test Split File <span>txt</span></a>
-                    <p><b>Question-Answer Templates and Programs</b></p>
-                    <a href="" class="download">Question Templates and Programs <span>csv</span></a><br>
-                    <a href="" class="download">Program Functions <span>csv</span></a><br>
-                    <a href="" class="download">QA Generation Code</a>
+                <div style="border-right: solid 1px var(--gray); padding-right: 20px;">
+                    <p style="font-size: 24px; line-height: 28px;"><b>Data Download</b></p>
+                    <p><b>Question, Multiple Choice Answers and Situation Graphs</b></p>
+                    <p>Questions and Answers.json</p>
+                    <a href="https://stardata.s3.amazonaws.com/Question_Answer_SituationGraph/STAR_train.json" class="download">Train</a> <a href="https://stardata.s3.amazonaws.com/Question_Answer_SituationGraph/STAR_val.json" class="download">Val</a>
+                    <a href="https://stardata.s3.amazonaws.com/Question_Answer_SituationGraph/STAR_test.json" class="download">Test</a><br>
+                    <a href="https://stardata.s3.amazonaws.com/Question_Answer_SituationGraph/split_file.json" class="download">Train/Val/Test Split File <span>json</span></a>
+                    <p>Question-Answer Templates and Programs</p>
+                    <a href="https://stardata.s3.amazonaws.com/Templates_Programs/QA_templates.csv" class="download">Question Templates <span>csv</span></a><br>
+                    <a href="https://stardata.s3.amazonaws.com/Templates_Programs/QA_programs.csv" class="download">QA Programs <span>csv</span></a><br>
+                    <p>Situation Video Data</p>
+                    <a href="https://stardata.s3.amazonaws.com/Situation_Video_Data/Video_Segments.csv" class="download">Video Segments <span>csv</span></a><br>
+                    <a href="https://stardata.s3.amazonaws.com/Situation_Video_Data/Video_Keyframe_IDs.csv" class="download">Video Keyframe IDs <span>csv</span></a><br>
+                    <a href="https://github.com/JingweiJ/ActionGenome" class="download">Frame Dumping Tool</a>
+                    <p>Annotations</p>
+                    <a href="https://stardata.s3.amazonaws.com/Annotations/pose.zip" class="download">Human Poses <span>zip</span></a><br>
+                    <a href="https://stardata.s3.amazonaws.com/Annotations/object_bbox_and_relationship.pkl" class="download">Object Bounding Boxes <span>pkl</span></a><br>
+                    <a href="https://stardata.s3.amazonaws.com/Annotations/person_bbox.pkl" class="download">Human Bounding Boxes <span>pkl</span></a>
                 </div>
                 <div>
-                    <p><b>Video Situation Graphs</b></p>
-                    <a href="" class="download">Situation Graphs <span>json</span></a><br>
-                    <a href="" class="download">Trimmed Video Segments <span>csv</span></a>
-                    <p><b>Video Raw Data</b></p>
-                    <a href="" class="download">Video Clips <span>zip</span></a><br>
-                    <a href="" class="download">Video Frames</a><br>
-                    <a href="" class="download">Frame Dumping Tool</a>
+                    <p style="font-size: 24px; line-height: 28px;"><b>STAR Codes and Scripts</b></p>
+                    <p>The code of the STAR benchmark is available on GitHub. With this code you can:</p>
+                    <p>Visualize the STAR questions, options, situation graphs</p>
+                    <a href="https://github.com/csbobby/QAGeneration/tree/release/code/QA_show_script" class="download">QA Visualization Script</a><br>
+                    <p>Generate new STAR questions for situation video clips</p>
+                    <a href="https://github.com/csbobby/QAGeneration/blob/master/code" class="download">QA Generation Code</a>
                 </div>
             </div>
             <hr>
@@ -146,17 +154,19 @@
 
         <div class="footer">
             <div>
-                <p><b>STAR Team:</b><br>
-                    Author A, Author B, Author C & Author D<br>
-                    Built and maintained by MIT-IBM Watson AI Lab<br><br>
-                    Copyright © 2021 <a href="index.html">STAR</a>
+                <p>
+                    Built and maintained by Lucy Yip and Bo Wu.<br><br>
+                    Copyright © 2021 STAR<br>
+                    <a href="https://github.com/csbobby/STAR/blob/main/LICENSE">Dataset License</a>
                 </p>
             </div>
+<!--
             <div style="text-align: end">
                 <a href="#">Privacy Policy</a><br>
                 <a href="#">Terms of Service</a><br>
-                <a href="#">Dataset License</a>
+                
             </div>
+-->
         </div>
 
     </div>
@@ -168,6 +178,4 @@
     <script src="js/interaction.js"></script>
     <script src="js/dataset.js"></script>
 
-</body>
-
-</html>
+</body></html>

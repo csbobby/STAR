@@ -47,7 +47,7 @@ function render_teaser(file) {
 
         });
 
-        document.getElementById("preview_actions_description").innerHTML = "these frames have a total of " + Object.keys(teaserActions).length + " actions."
+        document.getElementById("preview_actions_description").innerHTML = "situation hypergraphs";
 
         let action_increment = (document.getElementById("preview_actions").offsetWidth - 30) / Object.keys(teaserdata.situations).length;
 
@@ -57,7 +57,7 @@ function render_teaser(file) {
             let action_div = document.createElement("div");
             action_div.style.marginLeft = action_increment * teaserActions[a].start + "px";
             action_div.style.width = action_increment * teaserActions[a].duration + "px";
-            action_div.innerHTML = "<div class='actiontop'></div><div class='actionbottom'>|</div><div class='actionbottom'>" + a + "</div>";
+            action_div.innerHTML = "<div class='actionbottom'>" + a + "</div><div class='actionbottom'>|</div><div class='actiontop'></div>";
             document.getElementById("preview_actions").append(action_div);
         })
 
@@ -358,10 +358,7 @@ function teaser_choice(n) {
     if (teaserdata.choices[n].answer == "Wrong") {
         document.getElementById("preview_answers").childNodes[n].className = "preview_incorrect";
         document.getElementById("preview_answers").childNodes[n].innerHTML += "<i class='fa fa-times-circle'></i>";
-        document.getElementById("teaser_response").innerHTML = "Unfortunately, this is not the best answer. <br>Take a look at how the data supports the correct one."
-    } else {
-        document.getElementById("teaser_response").innerHTML = "You answered correctly! <br>Take a look at how the data supports your answer."
-    }
+    };
 
     document.getElementById("teaser_correct").className = "preview_correct";
     document.getElementById("teaser_correct").innerHTML += "<i class='fa fa-check-circle'></i>";
@@ -370,4 +367,4 @@ function teaser_choice(n) {
 
 }
 
-render_teaser("Interaction_T2_5181");
+render_teaser("Sequence_T2_4161");

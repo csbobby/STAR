@@ -249,11 +249,12 @@ input:checked + .slider:before {
     display: flex;
     margin: 0 0 50px 0;
     margin-right: -30px;
+    flex: strech;
 }
 
 .rows > div {
     margin-right: 30px;
-    padding-right: 30px;
+    flex: 1;
 }
 
 .rows > div > p {
@@ -401,15 +402,15 @@ a.download:hover {
 
 #preview_actions > div > .actiontop {
     border: solid 1px var(--secondary);
-    border-top: none;
+    border-bottom: none;
     height: 5px;
 }
 
 #preview_actions > div > .actionbottom {
     color: var(--secondary);
     text-align: center;
-    margin-top: -3px;
-    margin-bottom: 5px;
+    margin-bottom: -3px;
+    margin-top: 5px;
     font-size: 12px;
     line-height: 16px;
 }
@@ -472,7 +473,7 @@ a.download:hover {
 }
 
 .e_images > img {
-    width: 50px;
+    height: 50px;
 }
 
 .e_images > p {
