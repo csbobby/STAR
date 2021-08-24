@@ -38,15 +38,13 @@ d3.json("data/sel_v2.json").then(function (raw_d) {
 
         questions.forEach(function (e) {
 
-            let c_answer = "<i class='fa fa-check-circle'></i>",
-                w_answers = "<i class='fa fa-times-circle'></i>",
-                e_images = "";
+            let answers = "";
 
             e.data.choices.forEach(function (d) {
                 if (d.answer == "Correct") {
-                    c_answer += " | " + d.choice;
+                    answers += "<i class='fa fa-check-circle'></i> " + d.choice + "<br>";
                 } else {
-                    w_answers += " | " + d.choice
+                    answers += "<i class='fa fa-times-circle'></i> " + d.choice + "<br>";
                 }
             })
 
@@ -54,8 +52,7 @@ d3.json("data/sel_v2.json").then(function (raw_d) {
                 "<p class='e_a'>" + e.data.question_id + "</p>" +
                 "<p class='e_q'>" + e.data.question + "</p>" +
                 "<p class='e_a'>Keyword(s): " + e.data.question_keyword.join(" | ") + "</p>" +
-                "<p class='e_c'><br>" + c_answer + " (Keyword(s): " + e.data.answer_keyword.join(" | ") + ")</p>" +
-                "<p class='e_a'>" + w_answers + "</p></div>";
+                "<p class='e_c'><br>" + answers + "</p></div>";
 
         });
     })
