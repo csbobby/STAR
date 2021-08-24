@@ -47,7 +47,7 @@ function render_teaser(file) {
 
         });
 
-        document.getElementById("preview_actions_description").innerHTML = "situation hypergraphs";
+        document.getElementById("preview_actions_description").innerHTML = "Situation Hypergraph";
 
         let action_increment = (document.getElementById("preview_actions").offsetWidth - 30) / Object.keys(teaserdata.situations).length;
 
@@ -279,7 +279,7 @@ function render_teaser(file) {
             teaser_choices +
             "<div class='t_response'></div></div>";
 
-        document.getElementById("preview_description").innerHTML = "This is example <b>" + teaserdata.question_id + "</b>, consisting of " + Object.keys(teaserdata.situations).length + " frames of video action.";
+        document.getElementById("preview_description").innerHTML = "QID: <b>" + teaserdata.question_id + "</b>, " + Object.keys(teaserdata.situations).length + " sampled keyframes.";
 
     })
 };
