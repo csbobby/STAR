@@ -357,7 +357,8 @@ a.download:hover {
     border-left: solid 2px var(--secondary);
 }
 
-.preview_example > button {
+.preview_example > button,
+#videos > button {
     display: inline-block;
     background: var(--background_gray);
     padding: 3px 13px;
@@ -370,21 +371,20 @@ a.download:hover {
     white-space: nowrap;
 }
 
-.preview_example > button:hover {
+.preview_example > button:hover,
+#videos > button:hover {
     filter: brightness(0.8);
 }
 
-.preview_example > button.active {
+.preview_example > button.active,
+#videos > button.active {
     background: var(--secondary);
     color: var(--background);
-}
-
-.preview_example > button.active:hover {
     filter: none !important;
 }
 
 #preview_screens,
-#preview_network{
+#preview_network {
     display: flex;
     padding-left: 30px;
     width: calc(100% + 5px);
@@ -431,10 +431,9 @@ a.download:hover {
     left: -5000px;
     top: 0;
     width: 400px;
-    background: var(--secondary);
     border-radius: 10px;
     padding: 12px 15px 9px 15px;
-    color: var(--background);
+    color: var(--main);
     z-index: 999;
 }
 
@@ -469,24 +468,46 @@ a.download:hover {
     margin: 5px 0;
     font-weight: 800;
     line-height: 24px;
-    color: white;
+    color: var(--main);
 }
 
-#e_images {
-    width: 300px;
+.e_images > img {
+    width: 50px;
 }
 
-#e_images > img {
-    width: 30px;
-    margin: 0 3px 3px 0;
+.e_images > p {
+    margin-left: 20px;
+    color: var(--main);
 }
 
 .e_images {
     display: flex;
+    padding: 10px;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .e_images > p {
     margin-bottom: 5px;
-    ;
+}
+
+#dataset {
+    display: flex;
+/*    align-items: center;*/
+}
+
+#videos > button {
+    display: block;
+    margin-right: 30px;
+}
+
+#video_details > div {
+    background: var(--background_gray);
+    border-radius: 10px;
+}
+
+#video_details > div > div {
+    display: inline-block;
+    width: 45%;
+    margin: 2.5%;
 }
