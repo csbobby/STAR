@@ -23,18 +23,14 @@ d3.json("data/sel_v2.json").then(function (raw_d) {
 
         questions.sort(function (a, b) {
             return d3.ascending(a.id, b.id);
-        })
+        });
 
         document.getElementById("videos").innerHTML += "<button class='demobutton' id='button" + vid + "'>" + vid + "</button>";
         document.getElementById("button" + vid).setAttribute("onmouseover", "focus_demo('" + vid + "')");
 
-        let e_images = "";
+        let e_images = "<video width='100%' controls><source src='../data/video/" + questions[3].id + ".mp4' type='video/mp4'></video>";
 
-        Object.keys(questions[0].data.situations).forEach(function (d) {
-            e_images += "<img src='data/video_keyframes/" + questions[0].id + "/" + d + ".png'>";
-        });
-
-        document.getElementById("video_details").innerHTML += "<div id='video" + vid + "' class='e_images'>" + e_images + "<p>including a total of " + Object.keys(questions[0].data.situations).length + " frames.</p></div><div class='demo_info' id='demo" + vid + "'></div>";
+        document.getElementById("video_details").innerHTML += "<div id='video" + vid + "' class='e_images'>" + e_images + "</div><div class='demo_info' id='demo" + vid + "'></div>";
 
         questions.forEach(function (e) {
 

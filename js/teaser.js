@@ -6,6 +6,8 @@ var teaserdata,
     linkGen = d3.linkVertical(),
     pairdata = [];
 
+var teaser_answer_choices = [];
+
 var teaserObjects, teaserBackground, teaserFill;
 
 function render_teaser(file) {
@@ -117,7 +119,7 @@ function render_teaser(file) {
 
             let tXScale = d3.scaleLinear()
                 .domain(d3.extent(tX))
-                .range([teaser_padding/1.5, teaser_width - teaser_padding]);
+                .range([teaser_padding / 1.5, teaser_width - teaser_padding]);
 
             let tYScale = d3.scaleLinear()
                 .domain(d3.extent(tY))
@@ -252,12 +254,10 @@ function render_teaser(file) {
 
         // run array of answer choices
         let teaser_choices = "";
+        teaser_answer_choices = [];
         teaserdata.choices.forEach(function (d, i) {
-            if (d.answer == "Correct") {
-                teaser_choices += "<button id='teaser_correct' onclick='teaser_choice(" + i + ")'>" + d.choice + "</button>";
-            } else {
-                teaser_choices += "<button onclick='teaser_choice(" + i + ")'>" + d.choice + "</button>";
-            }
+            teaser_answer_choices.push(d.choice);
+            teaser_choices += "<button onmouseover='teaser_choice(" + i + ")'>" + d.choice + "</button>";
         })
 
         // append questions
@@ -331,14 +331,25 @@ function teaser_choice(a) {
 
         };
     });
+    
+    console.log(teaser_answer_choices);
+    console.log(a);
 
-    if (teaserdata.choices[a].answer == "Wrong") {
-        document.getElementById("preview_answers").childNodes[a].className = "preview_incorrect";
-        document.getElementById("preview_answers").childNodes[a].innerHTML += "<i class='fa fa-times-circle'></i>";
-    } else {
-        document.getElementById("preview_answers").childNodes[a].className = "preview_correct";
-        document.getElementById("preview_answers").childNodes[a].innerHTML += "<i class='fa fa-check-circle'></i>";
-    };
+    teaserdata.choices.forEach(function (b, i) {
+
+        if (i == a) {
+            if (teaserdata.choices[i].answer == "Wrong") {
+                document.getElementById("preview_answers").childNodes[i].className = "preview_incorrect";
+                document.getElementById("preview_answers").childNodes[i].innerHTML = teaser_answer_choices[a] + "<i class='fa fa-times-circle'></i>";
+            } else {
+                document.getElementById("preview_answers").childNodes[i].className = "preview_correct";
+                document.getElementById("preview_answers").childNodes[i].innerHTML = teaser_answer_choices[a] + "<i class='fa fa-check-circle'></i>";
+            };
+        } else {
+            document.getElementById("preview_answers").childNodes[i].className = "";
+            document.getElementById("preview_answers").childNodes[i].innerHTML = teaser_answer_choices[i];
+        }
+    });
 };
 
 render_teaser("Sequence_T2_4161");

@@ -303,6 +303,7 @@ a.download:hover {
 #preview_answers > button {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: calc(100% - 10px);
     margin-top: 5px;
     background: var(--background_gray);
@@ -312,10 +313,6 @@ a.download:hover {
     white-space: nowrap;
     margin-right: 10px;
     font-size: 18px;
-}
-
-#preview_answers > button:hover {
-    filter: brightness(0.9);
 }
 
 .footer {
@@ -350,7 +347,7 @@ a.download:hover {
 .preview_correct > i,
 .preview_incorrect > i {
     float: right;
-    margin: 3px 0 0 10px;
+    margin: 0 0 0 10px;
     color: var(--background);
 }
 
