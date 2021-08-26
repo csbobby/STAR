@@ -14,8 +14,6 @@ d3.json("data/selected_examples_keyframes_dict.json").then(function (raw_d) {
         })
     })
 
-    console.log(demodata);
-
     video_ids.forEach(function (vid) {
         let questions = demodata.filter(function (d) {
             return d.data.video_id == vid;
@@ -45,7 +43,8 @@ d3.json("data/selected_examples_keyframes_dict.json").then(function (raw_d) {
             document.getElementById("demo" + vid).innerHTML += "<div class='demo_questions'>" +
                 "<div><p class='e_a'>" + e.data.question_id + "</p>" +
                 "<p class='e_q'>" + e.data.question + "</p>" +
-                "<p class='e_a'>Keyword(s): " + e.data.question_keyword.join(" | ") + "</p></div>" +
+//                "<p class='e_a'>Keyword(s): " + e.data.question_keyword.join(" | ") + "</p>" + 
+                "</div>" +
                 "<div><p class='e_c'><br>" + answers + "</p></div></div>";
 
         });
