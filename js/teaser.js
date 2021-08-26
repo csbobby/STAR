@@ -10,6 +10,22 @@ var teaser_answer_choices = [];
 
 var teaserObjects, teaserBackground, teaserFill;
 
+d3.json("data/selected_teaser_chain_dict.json").then(function (d) {
+    Object.keys(d).forEach(function (n) {
+        let name = "";
+        let i = 0;
+        while (n[i] !== "_") {
+            name += n[i];
+            i++;
+        }
+        console.log(name);
+        document.getElementById("teaser_buttons").innerHTML += "<button id='p_sel" + n + "'>" + name + "</button>";
+        document.getElementById("p_sel" + n).setAttribute("onmouseover", "render_teaser('" + n + "')");
+    })
+
+    render_teaser(Object.keys(d)[0]);
+});
+
 function render_teaser(file) {
 
     d3.json("data/selected_teaser_chain_dict.json").then(function (teaser) {
@@ -331,9 +347,6 @@ function teaser_choice(a) {
 
         };
     });
-    
-    console.log(teaser_answer_choices);
-    console.log(a);
 
     teaserdata.choices.forEach(function (b, i) {
 
@@ -351,5 +364,3 @@ function teaser_choice(a) {
         }
     });
 };
-
-render_teaser("Sequence_T2_4161");
