@@ -1,7 +1,7 @@
 var video_ids = [],
     demodata = [];
 
-d3.json("data/sel_v2.json").then(function (raw_d) {
+d3.json("data/selected_examples_keyframes_dict.json").then(function (raw_d) {
 
     Object.keys(raw_d).forEach(function (d) {
         if (!video_ids.includes(raw_d[d].video_id)) {
@@ -28,7 +28,7 @@ d3.json("data/sel_v2.json").then(function (raw_d) {
         document.getElementById("videos").innerHTML += "<button class='demobutton' id='button" + vid + "'>" + vid + "</button>";
         document.getElementById("button" + vid).setAttribute("onmouseover", "focus_demo('" + vid + "')");
 
-        let e_images = "<video width='100%' controls muted loop autoplay><source src='data/videos/" + questions[0].id + ".mp4' type='video/mp4'></video>";
+        let e_images = "<video width='100%' controls muted loop autoplay><source src='https://stardata.s3.amazonaws.com/homepage/trimmed_video_clips/" + questions[0].id + ".mp4' type='video/mp4'></video>";
 
         document.getElementById("video_details").innerHTML += "<div id='video" + vid + "' class='e_images'>" + e_images + "</div><div class='demo_info' id='demo" + vid + "'></div>";
 
