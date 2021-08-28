@@ -528,3 +528,10 @@ a.download:hover {
     width: 50%;
     justify-content: space-between;
 }
+
+.author > p {
+    font-size: 14px;
+}
+.author > p > b {
+    font-size: 18px;
+}
