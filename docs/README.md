@@ -1,6 +1,6 @@
-# STAR Benchmark  
+# STAR Homepage
 
-A novel video question-answering benchmark for situated reasoning. 
+A new benchmark for situated reasoning in real-world videos. 
 
 ### Question Type  
 * Interaction Question
@@ -28,17 +28,13 @@ A novel video question-answering benchmark for situated reasoning.
 
 ### Supporting Data  
 * Video Frames
-  * [Raw Videos from Charades (scaled to 480p)](http://ai2-website.s3.amazonaws.com/data/Charades_v1_480.zip)
+  * [Raw Videos from Charades (scaled to 480p)](https://prior.allenai.org/projects/charades)
 * Video Features
-  * [Visual Features from the Charades](https://prior.allenai.org/projects/charades)
+  * [Visual Features from Charades](https://prior.allenai.org/projects/charades)
 
-### STAR Codes and Scripts  
-The code of the STAR benchmark is available on GitHub. With this code you can:
- * Visualize the STAR questions, options, situation graphs: [QA Visualization Script](https://github.com/csbobby/QAGeneration/tree/release/code/QA_show_script)
- * Generate new STAR questions for situation video clips: [QA Generation Code](https://github.com/csbobby/QAGeneration/tree/release/code)
+### STAR Visulization
+We prodive some QA examples in STAR which you can visulize by using [QA Visualization Script](https://github.com/csbobby/STAR_Dataset/tree/main/code)
+ * before visualization, please download the Supporting Data (include video keyframes from Action Genome and original videos from Charades) and place them in the mentioned directories in the scripts.
 
-
-
-
-
-
+### STAR Generation
+We also prodive our QA generation code, you can generate new STAR questions for situation video clips: [QA Generation Code](https://github.com/csbobby/STAR_Dataset/tree/main/code)
