@@ -1475,7 +1475,7 @@
     }
   },
   "Feasibility_T4_123": {
-    "question": "Which object is possible to be took when the person is in front of the table?",
+    "question": "Which object is possible to be taken when the person is in front of the table?",
     "question_id": "Feasibility_T4_123",
     "start": 6.2,
     "end": 17.0,
