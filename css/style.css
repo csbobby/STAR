@@ -19,6 +19,14 @@ body {
     color: var(--main);
 }
 
+.news {
+    position: fixed;
+    width: 100%;
+    background: var(--green);
+    padding: 9px 16px;
+    z-index: 999;
+}
+
 p {
     font-size: 15px;
     line-height: 20px;
@@ -53,7 +61,7 @@ b {
     position: fixed;
     padding: 16px;
     left: 50px;
-    top: 75px;
+    top: 100px;
     width: 200px;
 }
 
@@ -153,7 +161,7 @@ input:checked + .slider:before {
 }
 
 .section {
-    padding: 85px 50px 0 50px;
+    padding: 110px 50px 0 50px;
 }
 
 .section > h4 {
@@ -534,4 +542,16 @@ a.download:hover {
 }
 .author > p > b {
     font-size: 18px;
+}
+
+.citation {
+    margin-top: 50px;
+    padding: 25px;;
+    background: var(--secondary);
+    color: white;
+}
+
+.citation > span {
+    display: block;
+    text-indent: 25px;
 }
