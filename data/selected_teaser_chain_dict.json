@@ -1,7 +1,7 @@
 {
-  "Interaction_T2_4993": {
+  "Interaction_T2_8166": {
     "question": "What did the person do with the bottle?",
-    "question_id": "Interaction_T2_4993",
+    "question_id": "Interaction_T2_8166",
     "start": 14.4,
     "end": 19.2,
     "video_id": "0TXYV",
@@ -416,9 +416,9 @@
       }
     }
   },
-  "Sequence_T2_3612": {
+  "Sequence_T1_7788": {
     "question": "Which object did the person take after they put down the bottle?",
-    "question_id": "Sequence_T2_3612",
+    "question_id": "Sequence_T1_7788",
     "start": 6.2,
     "end": 19.2,
     "video_id": "0TXYV",
@@ -945,9 +945,9 @@
       }
     }
   },
-  "Prediction_T6_729": {
+  "Prediction_T3_729": {
     "question": "Which object would the person put down next?",
-    "question_id": "Prediction_T6_729",
+    "question_id": "Prediction_T3_729",
     "start": 6.2,
     "end": 13.2,
     "video_id": "0TXYV",
@@ -1474,9 +1474,9 @@
       }
     }
   },
-  "Feasibility_T4_123": {
+  "Feasibility_T3_123": {
     "question": "Which object is possible to be taken when the person is in front of the table?",
-    "question_id": "Feasibility_T4_123",
+    "question_id": "Feasibility_T3_123",
     "start": 6.2,
     "end": 17.0,
     "video_id": "0TXYV",
