@@ -1,6 +1,6 @@
 function load_data() {
 
-    d3.json("data/selected_examples.json").then(function (raw_data) {
+    d3.json("homepage_data/selected_examples.json").then(function (raw_data) {
 
         video_names.forEach(function (d) {
             data[d] = {
@@ -106,13 +106,13 @@ function render_example(id) {
         frame.style.display = "inline-block";
         frame.style.width = (width - 150) / (frames.length - 1) + "px";
         frame.style.height = video_height + "px"
-        frame.style.backgroundImage = "url('data/" + id + "/" + d + ".png')";
+        frame.style.backgroundImage = "url('homepage_data/" + id + "/" + d + ".png')";
         frame.style.opacity = 0.3;
         document.getElementById("frames").appendChild(frame);
     })
 
     document.getElementById("focused_network").innerHTML = "<div>" +
-        "<img id='preview_img' src='data/" + chosen_video + "/" + frames[0] + ".png'>" +
+        "<img id='preview_img' src='homepage_data/" + chosen_video + "/" + frames[0] + ".png'>" +
         "<div id='preview_network'></div></div>";
 
     let focused_network_width = document.getElementById("focused_network").offsetWidth;
@@ -130,7 +130,7 @@ function render_example(id) {
 
 function example_focus(n, id) {
     
-    document.getElementById("preview_img").src = "data/" + chosen_video + "/" + id + ".png";
+    document.getElementById("preview_img").src = "homepage_data/" + chosen_video + "/" + id + ".png";
 
     // return current frame to narrow and faded view
     document.getElementById("frame" + focused_frame).style.width = (width - 150) / (frames.length - 1) + "px";
@@ -156,7 +156,7 @@ function render_network(id) {
 
     video_data = data[id];
 
-    d3.json("data/obj_rel_cls_dict.json").then(function (dict) {
+    d3.json("homepage_data/obj_rel_cls_dict.json").then(function (dict) {
 
         video_data.box_all.forEach(function (d, i) {
             network_data.nodes.push({
