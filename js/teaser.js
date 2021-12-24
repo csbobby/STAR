@@ -10,7 +10,7 @@ var teaser_answer_choices = [];
 
 var teaserObjects, teaserBackground, teaserFill;
 
-d3.json("data/selected_teaser_chain_dict.json").then(function (d) {
+d3.json("homepage_data/selected_teaser_chain_dict.json").then(function (d) {
     Object.keys(d).forEach(function (n) {
         let name = "";
         let i = 0;
@@ -28,7 +28,7 @@ d3.json("data/selected_teaser_chain_dict.json").then(function (d) {
 
 function render_teaser(file) {
 
-    d3.json("data/selected_teaser_chain_dict.json").then(function (teaser) {
+    d3.json("homepage_data/selected_teaser_chain_dict.json").then(function (teaser) {
 
         Object.keys(teaser).forEach(function (d) {
             if (d == file) {
@@ -95,7 +95,7 @@ function render_teaser(file) {
             // create teaser screen div
             let teaser_screen = document.createElement("div");
             teaser_screen.className = "t_screen";
-            teaser_screen.innerHTML = "<img id='preview" + d + "' src='data/" + teaserdata.video_id + "/" + d + ".png'>";
+            teaser_screen.innerHTML = "<img id='preview" + d + "' src='homepage_data/" + teaserdata.video_id + "/" + d + ".png'>";
 
             let teaser_networks = document.createElement("div");
             teaser_networks.className = "t_screen";
