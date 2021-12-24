@@ -1,0 +1,2006 @@
+{
+  "Interaction_T2_8166": {
+    "question": "What did the person do with the bottle?",
+    "question_id": "Interaction_T2_8166",
+    "start": 14.4,
+    "end": 19.2,
+    "video_id": "0TXYV",
+    "choices": [
+      {
+        "choice_id": 0,
+        "choice": "Put down.",
+        "answer": "Correct",
+        "chain": {
+          "000439": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000491": {
+            "rel_pairs": [
+              [
+                "person",
+                "bottle"
+              ],
+              [
+                "person",
+                "bottle"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "holding"
+            ]
+          },
+          "000495": {
+            "rel_pairs": [
+              [
+                "person",
+                "bottle"
+              ],
+              [
+                "person",
+                "bottle"
+              ],
+              [
+                "bottle",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "touching",
+              "on"
+            ]
+          },
+          "000523": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000542": {
+            "rel_pairs": [],
+            "rel_labels": []
+          }
+        }
+      },
+      {
+        "choice_id": 1,
+        "choice": "Washed.",
+        "answer": "Wrong",
+        "chain": {
+          "000439": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000491": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000495": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000523": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000542": {
+            "rel_pairs": [],
+            "rel_labels": []
+          }
+        }
+      },
+      {
+        "choice_id": 2,
+        "choice": "Took.",
+        "answer": "Wrong",
+        "chain": {
+          "000439": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000491": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000495": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000523": {
+            "rel_pairs": [
+              [
+                "person",
+                "book"
+              ],
+              [
+                "person",
+                "book"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "touching",
+              "in front of",
+              "on"
+            ]
+          },
+          "000542": {
+            "rel_pairs": [
+              [
+                "person",
+                "book"
+              ],
+              [
+                "person",
+                "book"
+              ]
+            ],
+            "rel_labels": [
+              "touching",
+              "in front of"
+            ]
+          }
+        }
+      },
+      {
+        "choice_id": 3,
+        "choice": "Ate.",
+        "answer": "Wrong",
+        "chain": {
+          "000439": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000491": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000495": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000523": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000542": {
+            "rel_pairs": [],
+            "rel_labels": []
+          }
+        }
+      }
+    ],
+    "situations": {
+      "000439": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "book",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "drinking from",
+          "holding",
+          "in front of",
+          "in front of",
+          "on",
+          "in front of"
+        ],
+        "actions": [
+          "Drinking from a bottle",
+          "Holding a phone"
+        ]
+      },
+      "000491": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "book",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "holding",
+          "holding",
+          "in front of",
+          "in front of",
+          "on",
+          "in front of"
+        ],
+        "actions": [
+          "Putting down a bottle somewhere",
+          "Holding a phone"
+        ]
+      },
+      "000495": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "book",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ],
+          [
+            "bottle",
+            "table"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "touching",
+          "holding",
+          "in front of",
+          "in front of",
+          "on",
+          "in front of",
+          "on"
+        ],
+        "actions": [
+          "Putting down a bottle somewhere",
+          "Holding a phone"
+        ]
+      },
+      "000523": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "bottle",
+            "table"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "book",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "on",
+          "holding",
+          "in front of",
+          "in front of",
+          "on",
+          "in front of",
+          "touching"
+        ],
+        "actions": [
+          "Taking a book somewhere",
+          "Holding a phone"
+        ]
+      },
+      "000542": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "bottle",
+            "table"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "on",
+          "holding",
+          "in front of",
+          "in front of",
+          "in front of",
+          "touching"
+        ],
+        "actions": [
+          "Taking a book somewhere",
+          "Holding a phone"
+        ]
+      }
+    }
+  },
+  "Sequence_T1_7788": {
+    "question": "Which object did the person take after they put down the bottle?",
+    "question_id": "Sequence_T1_7788",
+    "start": 6.2,
+    "end": 19.2,
+    "video_id": "0TXYV",
+    "choices": [
+      {
+        "choice_id": 0,
+        "choice": "The book.",
+        "answer": "Correct",
+        "chain": {
+          "000184": {
+            "rel_pairs": [
+              [
+                "person",
+                "book"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000288": {
+            "rel_pairs": [
+              [
+                "person",
+                "book"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000439": {
+            "rel_pairs": [
+              [
+                "person",
+                "book"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000491": {
+            "rel_pairs": [
+              [
+                "person",
+                "book"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000542": {
+            "rel_pairs": [
+              [
+                "person",
+                "book"
+              ],
+              [
+                "person",
+                "book"
+              ]
+            ],
+            "rel_labels": [
+              "holding",
+              "in front of"
+            ]
+          }
+        }
+      },
+      {
+        "choice_id": 1,
+        "choice": "The towel.",
+        "answer": "Wrong",
+        "chain": {
+          "000184": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000288": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000439": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000491": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000542": {
+            "rel_pairs": [],
+            "rel_labels": []
+          }
+        }
+      },
+      {
+        "choice_id": 2,
+        "choice": "The phone.",
+        "answer": "Wrong",
+        "chain": {
+          "000184": {
+            "rel_pairs": [
+              [
+                "person",
+                "phone"
+              ],
+              [
+                "person",
+                "phone"
+              ]
+            ],
+            "rel_labels": [
+              "holding",
+              "in front of"
+            ]
+          },
+          "000288": {
+            "rel_pairs": [
+              [
+                "person",
+                "phone"
+              ],
+              [
+                "person",
+                "phone"
+              ]
+            ],
+            "rel_labels": [
+              "holding",
+              "in front of"
+            ]
+          },
+          "000439": {
+            "rel_pairs": [
+              [
+                "person",
+                "phone"
+              ],
+              [
+                "person",
+                "phone"
+              ]
+            ],
+            "rel_labels": [
+              "holding",
+              "in front of"
+            ]
+          },
+          "000491": {
+            "rel_pairs": [
+              [
+                "person",
+                "phone"
+              ],
+              [
+                "person",
+                "phone"
+              ]
+            ],
+            "rel_labels": [
+              "holding",
+              "in front of"
+            ]
+          },
+          "000542": {
+            "rel_pairs": [
+              [
+                "person",
+                "phone"
+              ],
+              [
+                "person",
+                "phone"
+              ]
+            ],
+            "rel_labels": [
+              "holding",
+              "in front of"
+            ]
+          }
+        }
+      },
+      {
+        "choice_id": 3,
+        "choice": "The table.",
+        "answer": "Wrong",
+        "chain": {
+          "000184": {
+            "rel_pairs": [
+              [
+                "person",
+                "table"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000288": {
+            "rel_pairs": [
+              [
+                "person",
+                "table"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000439": {
+            "rel_pairs": [
+              [
+                "person",
+                "table"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000491": {
+            "rel_pairs": [
+              [
+                "person",
+                "table"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000542": {
+            "rel_pairs": [
+              [
+                "person",
+                "table"
+              ],
+              [
+                "person",
+                "book"
+              ]
+            ],
+            "rel_labels": [
+              "holding",
+              "in front of"
+            ]
+          }
+        }
+      }
+    ],
+    "situations": {
+      "000184": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "book",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "drinking from",
+          "holding",
+          "in front of",
+          "in front of",
+          "on",
+          "in front of"
+        ],
+        "actions": [
+          "Drinking from a bottle",
+          "Holding a phone"
+        ]
+      },
+      "000288": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "book",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "drinking from",
+          "holding",
+          "in front of",
+          "in front of",
+          "on",
+          "in front of"
+        ],
+        "actions": [
+          "Drinking from a bottle",
+          "Holding a phone"
+        ]
+      },
+      "000439": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "book",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "drinking from",
+          "holding",
+          "in front of",
+          "in front of",
+          "on",
+          "in front of"
+        ],
+        "actions": [
+          "Drinking from a bottle",
+          "Holding a phone"
+        ]
+      },
+      "000491": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "book",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "touching",
+          "holding",
+          "in front of",
+          "in front of",
+          "on",
+          "in front of"
+        ],
+        "actions": [
+          "Putting down a bottle somewhere",
+          "Holding a phone"
+        ]
+      },
+      "000542": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "bottle",
+            "table"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "on",
+          "holding",
+          "in front of",
+          "in front of",
+          "in front of",
+          "holding"
+        ],
+        "actions": [
+          "Taking a book somewhere",
+          "Holding a phone"
+        ]
+      }
+    }
+  },
+  "Prediction_T3_729": {
+    "question": "Which object would the person put down next?",
+    "question_id": "Prediction_T3_729",
+    "start": 6.2,
+    "end": 13.2,
+    "video_id": "0TXYV",
+    "choices": [
+      {
+        "choice_id": 0,
+        "choice": "The bottle.",
+        "answer": "Correct",
+        "chain": {
+          "000184": {
+            "rel_pairs": [
+              [
+                "person",
+                "bottle"
+              ],
+              [
+                "person",
+                "bottle"
+              ]
+            ],
+            "rel_labels": [
+              "drinking from",
+              "in front of"
+            ]
+          },
+          "000207": {
+            "rel_pairs": [
+              [
+                "person",
+                "bottle"
+              ],
+              [
+                "person",
+                "bottle"
+              ]
+            ],
+            "rel_labels": [
+              "drinking from",
+              "in front of"
+            ]
+          },
+          "000265": {
+            "rel_pairs": [
+              [
+                "person",
+                "bottle"
+              ],
+              [
+                "person",
+                "bottle"
+              ]
+            ],
+            "rel_labels": [
+              "holding",
+              "in front of"
+            ]
+          },
+          "000306": {
+            "rel_pairs": [
+              [
+                "person",
+                "bottle"
+              ],
+              [
+                "person",
+                "bottle"
+              ]
+            ],
+            "rel_labels": [
+              "holding",
+              "in front of"
+            ]
+          },
+          "000384": {
+            "rel_pairs": [
+              [
+                "person",
+                "bottle"
+              ],
+              [
+                "person",
+                "bottle"
+              ]
+            ],
+            "rel_labels": [
+              "holding",
+              "in front of"
+            ]
+          }
+        }
+      },
+      {
+        "choice_id": 1,
+        "choice": "The towel",
+        "answer": "Wrong",
+        "chain": {
+          "000184": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000207": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000265": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000306": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000384": {
+            "rel_pairs": [],
+            "rel_labels": []
+          }
+        }
+      },
+      {
+        "choice_id": 2,
+        "choice": "The table.",
+        "answer": "Wrong",
+        "chain": {
+          "000184": {
+            "rel_pairs": [
+              [
+                "person",
+                "table"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000207": {
+            "rel_pairs": [
+              [
+                "person",
+                "table"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000265": {
+            "rel_pairs": [
+              [
+                "person",
+                "table"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000306": {
+            "rel_pairs": [
+              [
+                "person",
+                "table"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000384": {
+            "rel_pairs": [
+              [
+                "person",
+                "table"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          }
+        }
+      },
+      {
+        "choice_id": 3,
+        "choice": "The book.",
+        "answer": "Wrong",
+        "chain": {
+          "000184": {
+            "rel_pairs": [
+              [
+                "person",
+                "book"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000207": {
+            "rel_pairs": [
+              [
+                "person",
+                "book"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000265": {
+            "rel_pairs": [
+              [
+                "person",
+                "book"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000306": {
+            "rel_pairs": [
+              [
+                "person",
+                "book"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000384": {
+            "rel_pairs": [
+              [
+                "person",
+                "book"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          }
+        }
+      }
+    ],
+    "situations": {
+      "000184": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "book",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "drinking from",
+          "holding",
+          "in front of",
+          "in front of",
+          "on",
+          "in front of"
+        ],
+        "actions": [
+          "Drinking from a bottle",
+          "Holding a phone"
+        ]
+      },
+      "000207": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "book",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "holding",
+          "holding",
+          "in front of",
+          "in front of",
+          "on",
+          "in front of"
+        ],
+        "actions": [
+          "Drinking from a bottle",
+          "Holding a phone"
+        ]
+      },
+      "000265": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "book",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "holding",
+          "holding",
+          "in front of",
+          "in front of",
+          "on",
+          "in front of"
+        ],
+        "actions": [
+          "Drinking from a bottle",
+          "Holding a phone"
+        ]
+      },
+      "000306": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "book",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "holding",
+          "holding",
+          "in front of",
+          "in front of",
+          "on",
+          "in front of"
+        ],
+        "actions": [
+          "Drinking from a bottle",
+          "Holding a phone"
+        ]
+      },
+      "000384": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "book",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "drinking from",
+          "holding",
+          "in front of",
+          "in front of",
+          "on",
+          "in front of"
+        ],
+        "actions": [
+          "Drinking from a bottle",
+          "Holding a phone"
+        ]
+      }
+    }
+  },
+  "Feasibility_T3_123": {
+    "question": "Which object is possible to be taken when the person is in front of the table?",
+    "question_id": "Feasibility_T3_123",
+    "start": 6.2,
+    "end": 17.0,
+    "video_id": "0TXYV",
+    "choices": [
+      {
+        "choice_id": 0,
+        "choice": "The phone.",
+        "answer": "Wrong",
+        "chain": {
+          "000207": {
+            "rel_pairs": [
+              [
+                "person",
+                "phone"
+              ],
+              [
+                "person",
+                "phone"
+              ]
+            ],
+            "rel_labels": [
+              "holding",
+              "in front of"
+            ]
+          },
+          "000345": {
+            "rel_pairs": [
+              [
+                "person",
+                "phone"
+              ],
+              [
+                "person",
+                "phone"
+              ]
+            ],
+            "rel_labels": [
+              "holding",
+              "in front of"
+            ]
+          },
+          "000439": {
+            "rel_pairs": [
+              [
+                "person",
+                "phone"
+              ],
+              [
+                "person",
+                "phone"
+              ]
+            ],
+            "rel_labels": [
+              "holding",
+              "in front of"
+            ]
+          },
+          "000467": {
+            "rel_pairs": [
+              [
+                "person",
+                "phone"
+              ],
+              [
+                "person",
+                "phone"
+              ]
+            ],
+            "rel_labels": [
+              "holding",
+              "in front of"
+            ]
+          },
+          "000491": {
+            "rel_pairs": [
+              [
+                "person",
+                "phone"
+              ],
+              [
+                "person",
+                "phone"
+              ]
+            ],
+            "rel_labels": [
+              "holding",
+              "in front of"
+            ]
+          }
+        }
+      },
+      {
+        "choice_id": 1,
+        "choice": "The bottle.",
+        "answer": "Wrong",
+        "chain": {
+          "000207": {
+            "rel_pairs": [
+              [
+                "person",
+                "bottle"
+              ],
+              [
+                "person",
+                "bottle"
+              ]
+            ],
+            "rel_labels": [
+              "holding",
+              "in front of"
+            ]
+          },
+          "000345": {
+            "rel_pairs": [
+              [
+                "person",
+                "bottle"
+              ],
+              [
+                "person",
+                "bottle"
+              ]
+            ],
+            "rel_labels": [
+              "holding",
+              "in front of"
+            ]
+          },
+          "000439": {
+            "rel_pairs": [
+              [
+                "person",
+                "bottle"
+              ],
+              [
+                "person",
+                "bottle"
+              ]
+            ],
+            "rel_labels": [
+              "drinking from",
+              "in front of"
+            ]
+          },
+          "000467": {
+            "rel_pairs": [
+              [
+                "person",
+                "bottle"
+              ],
+              [
+                "person",
+                "bottle"
+              ]
+            ],
+            "rel_labels": [
+              "drinking from",
+              "in front of"
+            ]
+          },
+          "000491": {
+            "rel_pairs": [
+              [
+                "person",
+                "bottle"
+              ],
+              [
+                "person",
+                "bottle"
+              ]
+            ],
+            "rel_labels": [
+              "holding",
+              "in front of"
+            ]
+          }
+        }
+      },
+      {
+        "choice_id": 2,
+        "choice": "The book",
+        "answer": "Correct",
+        "chain": {
+          "000207": {
+            "rel_pairs": [
+              [
+                "person",
+                "book"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000345": {
+            "rel_pairs": [
+              [
+                "person",
+                "book"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000439": {
+            "rel_pairs": [
+              [
+                "person",
+                "book"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000467": {
+            "rel_pairs": [
+              [
+                "person",
+                "book"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          },
+          "000491": {
+            "rel_pairs": [
+              [
+                "person",
+                "book"
+              ],
+              [
+                "book",
+                "table"
+              ]
+            ],
+            "rel_labels": [
+              "in front of",
+              "on"
+            ]
+          }
+        }
+      },
+      {
+        "choice_id": 3,
+        "choice": "The bag.",
+        "answer": "Wrong",
+        "chain": {
+          "000207": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000345": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000439": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000467": {
+            "rel_pairs": [],
+            "rel_labels": []
+          },
+          "000491": {
+            "rel_pairs": [],
+            "rel_labels": []
+          }
+        }
+      }
+    ],
+    "situations": {
+      "000207": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "book",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "holding",
+          "holding",
+          "in front of",
+          "in front of",
+          "on",
+          "in front of"
+        ],
+        "actions": [
+          "Holding a bottle",
+          "Holding a phone"
+        ]
+      },
+      "000345": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "book",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "holding",
+          "holding",
+          "in front of",
+          "in front of",
+          "on",
+          "in front of"
+        ],
+        "actions": [
+          "Holding a bottle",
+          "Holding a phone"
+        ]
+      },
+      "000439": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "book",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "drinking from",
+          "holding",
+          "in front of",
+          "in front of",
+          "on",
+          "in front of"
+        ],
+        "actions": [
+          "Drinking from a bottle",
+          "Holding a phone"
+        ]
+      },
+      "000467": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "book",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "drinking from",
+          "holding",
+          "in front of",
+          "in front of",
+          "on",
+          "in front of"
+        ],
+        "actions": [
+          "Drinking from a bottle",
+          "Holding a phone"
+        ]
+      },
+      "000491": {
+        "bbox_labels": [],
+        "rel_pairs": [
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "bottle"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "phone"
+          ],
+          [
+            "person",
+            "table"
+          ],
+          [
+            "book",
+            "table"
+          ],
+          [
+            "person",
+            "book"
+          ]
+        ],
+        "rel_labels": [
+          "in front of",
+          "holding",
+          "holding",
+          "in front of",
+          "in front of",
+          "on",
+          "in front of"
+        ],
+        "actions": [
+          "Putting down a bottle",
+          "Holding a phone"
+        ]
+      }
+    }
+  }
+}
