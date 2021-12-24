@@ -32,7 +32,7 @@ If you use STAR in your research or wish to refer to the results published in th
 ```BibTeX
 @inproceedings{wu2021star_situated_reasoning,
 author={Wu, Bo and Yu, Shoubin and Chen, Zhenfang and Tenenbaum, Joshua B and Gan, Chuang},
-title = {{STAR}: A Benchmark for Situated Reasoning in Real-World Videos},
+title = {STAR: A Benchmark for Situated Reasoning in Real-World Videos},
 booktitle = {Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS)},
 year = {2021}
 }
