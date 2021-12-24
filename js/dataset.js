@@ -1,7 +1,7 @@
 var video_ids = [],
     demodata = [];
 
-d3.json("data/selected_examples_keyframes_dict.json").then(function (raw_d) {
+d3.json("homepage_data/selected_examples_keyframes_dict.json").then(function (raw_d) {
 
     Object.keys(raw_d).forEach(function (d) {
         if (!video_ids.includes(raw_d[d].video_id)) {
