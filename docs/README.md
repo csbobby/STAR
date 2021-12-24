@@ -19,7 +19,7 @@ A new benchmark for situated reasoning in real-world videos.
 ### Situation Video Data  
  * [Video Segments (.csv)](http://star.csail.mit.edu/data/Situation_Video_Data/Video_Segments.csv)
  * [Video Keyframe IDs (.csv)](http://star.csail.mit.edu/data/Situation_Video_Data/Video_Keyframe_IDs.csv)
- * [Frame Dumping Tool from the Action Genome](https://github.com/JingweiJ/ActionGenome)
+ * [Frame Dumping Tool from Action Genome](https://github.com/JingweiJ/ActionGenome)
 
 ### Annotations  
  * [Human Poses (.zip)](http://star.csail.mit.edu/data/Annotations/pose.zip)
@@ -27,6 +27,7 @@ A new benchmark for situated reasoning in real-world videos.
  * [Human Bounding Boxes (.pkl)](http://star.csail.mit.edu/data/Annotations/person_bbox.pkl)
 
 ### Supporting Data  
+* Our bench built upon [Charades Dataset](https://prior.allenai.org/projects/charades) and [Action Genome](https://www.actiongenome.org), please download raw videos from Charades Dataset through the below links.
 * Video Frames
   * [Raw Videos from Charades Dataset (scaled to 480p)](https://prior.allenai.org/projects/charades)
 * Video Features
