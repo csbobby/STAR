@@ -1,7 +1,7 @@
 ## STAR Homepage
 
 ### STAR: A Benchmark for Situated Reasoning in Real-World Videos
-A new benchmark for situated reasoning in real-world videos. 
+[STAR Benchmark Paper](https://openreview.net/pdf?id=EfgNF5-ZAjM): A new benchmark for situated reasoning in real-world videos. 
 
 
 <div align="center">
@@ -27,7 +27,7 @@ You are welcome to use [STAR Challenge Leaderboard](https://eval.ai/web/challeng
 
 ## STAR Repository
 
-Please find benchmark details or tools from the STAR repository [STAR Repository](https://github.com/csbobby/STAR_Benchmark). 
+Please find benchmark details or tools from the [STAR Repository](https://github.com/csbobby/STAR_Benchmark). 
 
 ## Citation
 
