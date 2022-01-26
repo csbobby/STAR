@@ -29,9 +29,6 @@ You are welcome to use [STAR Challenge Leaderboard](https://eval.ai/web/challeng
 Please find benchmark details or tools from the [STAR Repository](https://github.com/csbobby/STAR_Benchmark). 
 
 ## Citation
-[STAR: A Benchmark for Situated Reasoning in Real-World Videos](http://star.csail.mit.edu) [[Paper PDF](https://openreview.net/pdf?id=EfgNF5-ZAjM)]  
-Bo Wu, Shoubin Yu, Zhenfang Chen, Joshua B Tenenbaum, Chuang Gan. NeurIPS. 2021.
-
 If you use STAR in your research or wish to refer to the results published in the paper, please use the following BibTeX entry.
 ```BibTeX
 @inproceedings{wu2021star_situated_reasoning,
