@@ -26,7 +26,7 @@ d3.json("homepage_data/selected_examples_keyframes_dict.json").then(function (ra
         document.getElementById("videos").innerHTML += "<button class='demobutton' id='button" + vid + "'>" + vid + "</button>";
         document.getElementById("button" + vid).setAttribute("onmouseover", "focus_demo('" + vid + "')");
 
-        document.getElementById("video_details").innerHTML += "<div id='video" + vid + "' class='e_images'><div style='min-width: 300px; background: var(--background); margin-right: 20px;'><video width='100%' controls muted loop autoplay><source src='https://stardata.s3.amazonaws.com/homepage/trimmed_video_clips/" + questions[0].id + ".mp4' type='video/mp4'></video></div><div class='demo_info' id='demo" + vid + "'></div></div>";
+        document.getElementById("video_details").innerHTML += "<div id='video" + vid + "' class='e_images'><div style='min-width: 300px; background: var(--background); margin-right: 20px;'><video width='100%' controls muted loop autoplay><source src='https://star-benchmark.s3.us-east.cloud-object-storage.appdomain.cloud/homepage/trimmed_video_clips/" + questions[0].id + ".mp4' type='video/mp4'></video></div><div class='demo_info' id='demo" + vid + "'></div></div>";
 
         questions.forEach(function (e) {
 
