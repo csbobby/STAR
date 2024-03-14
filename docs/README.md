@@ -11,8 +11,7 @@ Reasoning in the real world is not divorced from situations. A key challenge is 
 
 ## Overview
 >
-[STAR: A Benchmark for Situated Reasoning in Real-World Videos](http://star.csail.mit.edu) [[Paper PDF](https://openreview.net/pdf?id=EfgNF5-ZAjM)]  
-Bo Wu, Shoubin Yu, Zhenfang Chen, Joshua B Tenenbaum, Chuang Gan, *NeurIPS*, 2021.
+[STAR: A Benchmark for Situated Reasoning in Real-World Videos](http://star.csail.mit.edu), *NeurIPS*, 2021. [[Paper PDF](https://openreview.net/pdf?id=EfgNF5-ZAjM)]
 >
 * 4 Qutestion Types
 * 60k Situated Questions
@@ -34,7 +33,7 @@ Please find benchmark details or tools from the [STAR Repository](https://github
 ## Citation
 If you use STAR in your research or wish to refer to the results published in the paper, please use the following BibTeX entry.
 ```BibTeX
-@inproceedings{wu2021star_situated_reasoning,
+@inproceedings{star_situated_reasoning,
 author={Wu, Bo and Yu, Shoubin and Chen, Zhenfang and Tenenbaum, Joshua B and Gan, Chuang},
 title = {STAR: A Benchmark for Situated Reasoning in Real-World Videos},
 booktitle = {Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS)},
