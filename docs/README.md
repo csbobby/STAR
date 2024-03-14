@@ -1,6 +1,6 @@
 ## STAR Homepage
 ### STAR: A Benchmark for Situated Reasoning in Real-World Videos
-
+This is the repository that contains source code for the STAR Homepage website. 
 
 <div align="center">
 <img src="../img/NeurIPS2021_star_teaser.png" width="800" >
