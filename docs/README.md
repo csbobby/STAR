@@ -1,6 +1,6 @@
 ## STAR Homepage
 ### STAR: A Benchmark for Situated Reasoning in Real-World Videos
-This is the repository that contains source code for the STAR Homepage website. 
+This is the repository that contains source code for the STAR Homepage website.
 
 <div align="center">
 <img src="../img/NeurIPS2021_star_teaser.png" width="800" >
@@ -31,7 +31,7 @@ You are welcome to use [STAR Challenge Leaderboard](https://eval.ai/web/challeng
 Please find benchmark details or tools from the [STAR Repository](https://github.com/csbobby/STAR_Benchmark). 
 
 ## Citation
-If you use STAR in your research or wish to refer to the results published in the paper, please use the following BibTeX entry.
+Please link back and cite the work if you would like to use the website template.
 ```BibTeX
 @inproceedings{star_situated_reasoning,
 author={Wu, Bo and Yu, Shoubin and Chen, Zhenfang and Tenenbaum, Joshua B and Gan, Chuang},
