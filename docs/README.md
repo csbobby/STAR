@@ -1,12 +1,11 @@
 ## STAR Homepage
 ### STAR: A Benchmark for Situated Reasoning in Real-World Videos
 
+[[STAR Homepage](http://star.csail.mit.edu)]
+Reasoning in the real world is not divorced from situations. A key challenge is to capture the present knowledge from surrounding situations and reason accordingly. STAR is a novel benchmark for Situated Reasoning, which provides challenging question-answering tasks, symbolic situation descriptions and logic-grounded diagnosis via real-world video situations.
 <div align="center">
 <img src="../img/NeurIPS2021_star_teaser.png" width="800" >
 </div>
-
-[[STAR Homepage](http://star.csail.mit.edu)]
-Reasoning in the real world is not divorced from situations. A key challenge is to capture the present knowledge from surrounding situations and reason accordingly. STAR is a novel benchmark for Situated Reasoning, which provides challenging question-answering tasks, symbolic situation descriptions and logic-grounded diagnosis via real-world video situations.
 
 ## Overview
 >
