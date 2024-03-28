@@ -1,6 +1,5 @@
 ## STAR Homepage
 ### STAR: A Benchmark for Situated Reasoning in Real-World Videos
-This is the repository that contains source code for the STAR Homepage website.
 
 <div align="center">
 <img src="../img/NeurIPS2021_star_teaser.png" width="800" >
@@ -27,7 +26,7 @@ To download STAR dataset, please refer to the [STAR Homepage](http://star.csail.
 You are welcome to use [STAR Challenge Leaderboard](https://eval.ai/web/challenges/challenge-page/1325/overview) for the online evaluation on the test dataset.
 
 ## STAR Repository
-
+This is the repository that contains source code for the STAR Homepage website.
 Please find benchmark details or tools from the [STAR Repository](https://github.com/csbobby/STAR_Benchmark). 
 
 ## Citation
